@@ -1,0 +1,54 @@
+/* Write your CSS code here */
+.nav-header {
+  padding: 20px;
+}
+.nav-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.website-logo {
+  width: 150px;
+  margin-right: auto;
+}
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+}
+.nav-link {
+  text-decoration: none;
+  color: grey;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.logout-desktop-btn {
+  background-color: rgb(51, 110, 248);
+  color: white;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.logout-mobile-btn {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+  .logout-desktop-btn {
+    display: none;
+  }
+  .logout-mobile-btn {
+    display: block;
+    width: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .logout-icon {
+    width: 30px;
+  }
+}
